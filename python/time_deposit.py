@@ -1,5 +1,6 @@
 class TimeDeposit:
-    def __init__(self, planType, balance, days):
+    def __init__(self, id, planType, balance, days):
+        self.id = id
         self.planType = planType
         self.balance = balance
         self.days = days

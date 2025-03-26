@@ -8,11 +8,12 @@ We were able to capture some of the business requirements, which are listed belo
 - An API endpoint should be provided for the frontend to call, allowing the balance of all accounts in the database to be updated.
   - This functionality is not currently implemented in the codebase. Please feel free to use any API framework of your choice to accomplish this.
 - All time deposit plans must be stored in the Postgres database.
-  - id: UUID (primary key)
-  - planType: String (required field)
-  - days: Integer (required field)
-  - balance: Decimal (required field)
-  - Please ensure that your solution includes the ability to properly spin up a Postgres database instance via Docker.
+  - timeDeposits
+    - id: Integer (primary key)
+    - planType: String (required field)
+    - days: Integer (required field)
+    - balance: Decimal (required field)
+    - Please ensure that your solution includes the ability to properly spin up a Postgres database instance via Docker.
 - The system should calculate the monthly interest based on the type of plan.
 - No interest will be added to most time deposit plans for the first 30 days.
 - There are currently 3 types of time deposit plans available at the bank: basic, student, and premium.
@@ -34,4 +35,4 @@ Important notes:
 - The TimeDeposit class contains all the necessary information to evaluate the applicable interest rate. If additional criteria are to be considered, we expect them to be added to the TimeDeposit class.
 - The criteria in evaluating the interest rate to become extremely complicated as the product grow, so please be sure your design is ready to extend.
 - Aside from the limitations listed above, feel free to update/change anything as you see fit such as framework version, library version, etc
-- There is not a standard "correct" answer to this problem because refactoring has a certain amount of subjectivity, but we'd like to know the reason behind your refactoring approach and how you justify them.
+- We at ikigai value SOLID, Design patterns, Clean/Hexagonal Architecture, and common clean code practices. Be ready to justify the approach that you take.

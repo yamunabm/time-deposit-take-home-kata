@@ -6,11 +6,6 @@ namespace time_deposit_kata_test
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public void UpdateBalance_Test()
         {
@@ -20,6 +15,7 @@ namespace time_deposit_kata_test
             {
                 new TimeDeposit
                 {
+                    Id = 1,
                     PlanType = "basic",
                     Balance = 1234567,
                     Days = 45
