@@ -8,12 +8,17 @@ We were able to capture some of the business requirements, which are listed belo
 - An API endpoint should be provided for the frontend to call, allowing the balance of all accounts in the database to be updated.
   - This functionality is not currently implemented in the codebase. Please feel free to use any API framework of your choice to accomplish this.
 - All time deposit plans must be stored in the Postgres database.
+  - Please ensure that your solution includes the ability to properly spin up a Postgres database instance via Docker.
   - timeDeposits
     - id: Integer (primary key)
-    - planType: String (required field)
-    - days: Integer (required field)
-    - balance: Decimal (required field)
-    - Please ensure that your solution includes the ability to properly spin up a Postgres database instance via Docker.
+    - planType: String (required)
+    - days: Integer (required)
+    - balance: Decimal (required)
+  - withdrawals
+    - id: Integer (primary key)
+    - timeDepositId: integer (Foreign Key) (required)
+    - amount: Decimal (required)
+    - date: Date (required)
 - The system should calculate the monthly interest based on the type of plan.
 - No interest will be added to most time deposit plans for the first 30 days.
 - There are currently 3 types of time deposit plans available at the bank: basic, student, and premium.
