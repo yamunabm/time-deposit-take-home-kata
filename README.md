@@ -8,7 +8,7 @@ We were able to capture some of the business requirements, which are listed belo
 - An API endpoint should be provided for the frontend to call, allowing the balance of all accounts in the database to be updated.
   - This functionality is not currently implemented in the codebase. Please feel free to use any API framework of your choice to accomplish this.
 - All time deposit plans must be stored in the Postgres database.
-  - Please ensure that your solution includes the ability to properly spin up a Postgres database instance via Docker.
+  - Please ensure that your solution includes the ability to store these tables and their rows in a database (for example, Docker, SQLite, etc.).
   - timeDeposits
     - id: Integer (primary key)
     - planType: String (required)
@@ -41,3 +41,4 @@ Important notes:
 - The criteria in evaluating the interest rate to become extremely complicated as the product grow, so please be sure your design is ready to extend.
 - Aside from the limitations listed above, feel free to update/change anything as you see fit such as framework version, library version, etc
 - We at ikigai value SOLID, Design patterns, Clean/Hexagonal Architecture, and common clean code practices. Be ready to justify the approach that you take.
+- Please include instructions on how to run the application upon submission.
