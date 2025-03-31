@@ -43,8 +43,7 @@ A junior developer implemented some domain logic in a time deposit system but di
 ## Important Guidelines
 - The existing `TimeDepositCalculator.updateBalance` method is functioning correctly. After refactoring, ensure that the behavior of this method remains unchanged.
 - Your final solution should include **two API endpoints**. Do not develop additional endpoints.
-- **Do not** create a pull request or a new branch in the current repository. Instead, fork this repository into your own GitHub repository and develop the solution there.
+- **Do not** create a pull request or a new branch in the ikigai-digital repository. Instead, fork this repository into your own GitHub repository and develop the solution there.
 
 ## Submission Instructions
 - Include clear instructions on how to run the application.
-- Justify your design choices and any changes made during the refactoring process.
