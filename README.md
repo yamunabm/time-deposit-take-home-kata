@@ -7,7 +7,7 @@ A junior developer implemented some domain logic in a time deposit system but di
 ## Requirements
 
 1. **API Endpoint**:
-  - Create an API endpoint for updating the balances of all accounts in the database.
+  - Create an API endpoint for updating the balances of all time deposits in the database.
   - Create an API endpoint to get all time deposits.
   - Choose any API framework you prefer.
 
