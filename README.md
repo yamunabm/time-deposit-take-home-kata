@@ -7,8 +7,8 @@ A junior developer implemented some domain logic in a time deposit system but di
 ## Requirements
 
 1. **API Endpoint**:
-  - Create an API endpoint for updating the balances of all time deposits in the database.
-  - Create an API endpoint to get all time deposits.
+  - Create a Restful API endpoint for updating the balances of all time deposits in the database.
+  - Create a Restful API endpoint to get all time deposits.
   - Choose any API framework you prefer.
 
 2. **Database Setup**:
@@ -38,12 +38,17 @@ A junior developer implemented some domain logic in a time deposit system but di
 
 5. **Code Quality**:
   - Adhere to SOLID principles, design patterns, and clean code practices where applicable.
-  - Embrace Hexagonal Architecture, Clean Architecture, or any other architectural patterns that you find suitable.
 
 ## Important Guidelines
 - The existing `TimeDepositCalculator.updateBalance` method is functioning correctly. After refactoring, ensure that the behavior of this method remains unchanged.
 - Your final solution should include **two API endpoints**. Do not develop additional endpoints.
 - **Do not** create a pull request or a new branch in the ikigai-digital repository. Instead, fork this repository into your own GitHub repository and develop the solution there.
 
+## Bonus
+- Embrace Hexagonal Architecture, Clean Architecture, or any other architectural patterns that you find suitable.
+- Atomic commits
+- Test containers
+
 ## Submission Instructions
 - Include clear instructions on how to run the application.
+- Email the link to your public GitHub repository.
