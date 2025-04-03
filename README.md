@@ -9,6 +9,12 @@ A junior developer implemented some domain logic in a time deposit system but di
 1. **API Endpoint**:
   - Create a Restful API endpoint for updating the balances of all time deposits in the database.
   - Create a Restful API endpoint to get all time deposits.
+    - Get API should return a list of all time deposits with this schema:
+      - id
+      - planType
+      - balance
+      - days
+      - withdrawals
   - Choose any API framework you prefer.
 
 2. **Database Setup**:
@@ -43,6 +49,7 @@ A junior developer implemented some domain logic in a time deposit system but di
 - The existing `TimeDepositCalculator.updateBalance` method is functioning correctly. After refactoring, ensure that the behavior of this method remains unchanged.
 - Your final solution should include **two API endpoints**. Do not develop additional endpoints.
 - **Do not** create a pull request or a new branch in the ikigai-digital repository. Instead, fork this repository into your own GitHub repository and develop the solution there.
+- No need to handle invalid input / exceptions.
 
 ## Bonus
 - Embrace Hexagonal Architecture, Clean Architecture, or any other architectural patterns that you find suitable.
