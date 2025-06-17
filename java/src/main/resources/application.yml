@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+
+spring:
+  application:
+    name: time-deposit-application
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+  #H2 (in-memory) database
+  datasource:
+    url: jdbc:h2:mem:time_deposit;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: ikigai
+    password:
+  h2:
+    console:
+      enabled: true
+
+# Logging level
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+
+
