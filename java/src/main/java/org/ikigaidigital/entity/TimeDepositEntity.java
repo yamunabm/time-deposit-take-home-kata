@@ -1,7 +1,10 @@
 package org.ikigaidigital.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -12,8 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "time_deposits")
-public class TimeDeposit {
-
+public class TimeDepositEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -27,6 +29,6 @@ public class TimeDeposit {
     @Column(nullable = false, precision = 15, scale = 2)
     private BigDecimal balance;
 
-    @OneToMany(mappedBy = "timeDeposit", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Withdrawal> withdrawals;
+    @OneToMany(mappedBy = "timeDeposit", cascade = CascadeType.ALL)
+    private List<WithdrawalEntity> withdrawals;
 }

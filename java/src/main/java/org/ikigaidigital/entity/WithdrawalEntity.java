@@ -1,7 +1,10 @@
 package org.ikigaidigital.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -12,7 +15,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "withdrawals")
-public class Withdrawal {
+public class WithdrawalEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +23,7 @@ public class Withdrawal {
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "time_deposit_id", nullable = false)
-    private TimeDeposit timeDeposit;
+    private TimeDepositEntity timeDeposit;
 
     @Column(nullable = false, precision = 15, scale = 2)
     private BigDecimal amount;

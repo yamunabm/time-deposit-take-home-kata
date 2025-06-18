@@ -6,16 +6,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.util.List;
+import java.time.LocalDate;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class TimeDepositDto {
-    private int id;
-    private PlanType planType;
-    private BigDecimal balance;
-    private int days;
-    private List<WithdrawalDto> withdrawals;
+public class WithdrawalDto {
+    private Integer id;
+    private Integer timeDepositId;
+    private BigDecimal amount;
+    private LocalDate date;
 }

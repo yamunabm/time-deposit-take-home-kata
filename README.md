@@ -33,7 +33,7 @@ A junior developer implemented some domain logic in a time deposit system but di
 
 3. **Interest Calculation**:
   - Implement logic to calculate monthly interest based on the plan type:
-    - **Basic plan**: 1% interest
+    - **Basic plan**: 1% interest (interest starts after 30 days)
     - **Student plan**: 3% interest (no interest after 1 year)
     - **Premium plan**: 5% interest (interest starts after 45 days)
   - No interest for the first 30 days for all plans.

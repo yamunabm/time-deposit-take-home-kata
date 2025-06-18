@@ -6,9 +6,14 @@ server:
 spring:
   application:
     name: time-deposit-application
+  sql:
+    init:
+      mode: always
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create-drop
+    show-sql: true
+    defer-datasource-initialization: true
 
   #H2 (in-memory) database
   datasource:
@@ -25,5 +30,7 @@ logging:
   level:
     root: INFO
     org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
 
